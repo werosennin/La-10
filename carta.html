@@ -1,0 +1,254 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="fuctions.js"></script>
+    <script defer src="prueba.js"></script>
+    <link rel="stylesheet" href="estilos1.css">
+    <link rel="shortcut icon" href="imagenes/restaurante.png">
+    <title>CafeLa10</title>
+    <style>
+        #ultimo + div {
+            visibility: hidden;
+        }
+        /* Estilo para el contenedor del widget de Google Translate */
+        #google_translate_element {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        /* Ocultar el selector de idiomas */
+        .goog-te-combo {
+            display: none;
+        }
+        /* Mostrar solo el logo de Google */
+        .goog-te-gadget {
+            font-size: 0 !important; /* Ocultar texto */
+        }
+        .goog-te-gadget img {
+            width: 24px; /* Tamaño del logo */
+            height: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor para el widget de Google Translate -->
+    <div id="google_translate_element"></div>
+
+    <div class="contenedor">
+        <header class="header">
+            <header>
+                <h1>
+                    <a>
+                        <img src="imagenes/restaurante1.png" alt="Logo Restaurante" width="100" height="100" class="d-inline-block align-text-top">
+                        <img src="imagenes/cafe.png" alt="Logo Café" width="200" height="100" class="d-inline-block align-text-top">
+                    </a>
+                </h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/cafeLaDiez/"><img src="imagenes/1384085.png" alt="Facebook" width="30" height="24" class="d-inline-block align-text-top">&nbsp; &nbsp;<i><b>Facebook</b></i></a></li>
+                    <li><a href="https://www.facebook.com/cafeLaDiez/"><img src="imagenes/instagram-logo-png-transparent-svg-vector-freebie-supply-in.png" alt="Instagram" width="30" height="24" class="d-inline-block align-text-top">&nbsp; &nbsp;<i><b>Instagram</b></i></a></li>
+                    <li><a href="tel:+525555104123"><i><b>Teléfono: (+52) 55 5510 4123</b></i></a></li>
+                </ul>
+                <center>
+                    <div class="hide">
+                        <i class="fa fa-bars" aria-hidden="true"></i><i><b>Redes y Teléfono</b></i>
+                    </div>
+                </center>
+            </nav>
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script>
+                $(".hide").on('click', function () {
+                    $("nav ul").toggle('slow');
+                });
+            </script>
+        </header>
+	 <main class="contenido">
+         <ul>
+          <li>
+            <h3><span class="icon-dashboard"></span>Desayunos</h3>
+            <ul>
+              <li class="menu-item"><a href="desayunos_completos.html">Desayuno Completo</a></li>
+              <!--<li class="menu-item"><a href="crepas.html">Crepas</a></li>-->
+              <li class="menu-item"><a href="tortas.html">Tortas y Sandwich</a></li>
+              <li class="menu-item"><a href="jugoyfruta.html">Jugos y Fruta</a></li>
+              <li class="menu-item"><a href="pan.html">Pan y Pasteles</a></li>
+            </ul>
+          </li>
+          <!-- we will keep this LI open by default -->
+          <li>
+            <h3><span class="icon-tasks"></span>Comidas</h3>
+            <ul>
+              <!--<li class="menu-item"><a href="entradas.html">Entradas</a></li>
+              <li class="menu-item"><a href="sopas.html">Sopas</a></li>-->
+              <li class="menu-item"><a href="ensaladas.html">Ensaladas</a></li>
+              <li class="menu-item"><a href="pasta.html">Pastas</a></li>
+              <!--<li class="menu-item"><a href="guarnicion.html">Guarnicion</a></li>-->
+              <li class="menu-item"><a href="de la granja.html">De la Granja</a></li>
+              <li class="menu-item"><a href="clasicos.html">Tacos</a></li>
+              <li class="menu-item"><a href="pezcados.html">Pescados</a></li>
+<!--<li class="menu-item"><a href="pizza.html">Pizza</a></li>-->
+              <li class="menu-item"><a href="parrilla.html">A la Parrilla</a></li>
+              <!--<li class="menu-item"><a href="tortas.html">Tortas y Sandwich</a></li>
+              <li class="menu-item"><a href="snacks.html">Snacks</a></li>
+              <li class="menu-item"><a href="antojito.html">Antojitos</a></li>
+              <li class="menu-item"><a href="hamburguesas.html">Hamburguesas</a></li>-->
+            </ul>
+          </li>
+          <!--<li>
+            <h3><span class="icon-calendar"></span>Cenas</h3>
+            <ul>
+              <li class="menu-item"><a href="snacks.html">Snacks</a></li>
+                          <li class="menu-item"><a href="pizza.html">Pizza</a></li>
+                          <li class="menu-item"><a href="tortas.html">Tortas y Sandwich</a></li>
+                          <li class="menu-item"><a href="hamburguesas.html">Hamburguesas y HotDog´s</a></li>
+                          <li class="menu-item"><a href="crepas.html">Crepas</a></li>
+                          <li class="menu-item"><a href="parrilla.html">A la Parrilla</a></li>
+                          <li class="menu-item"><a href="especial.html">Especialidad</a></li>
+                          <li class="menu-item"><a href="antojito.html">Antojitos</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <h3><span class="icon-heart"></span>Snacks-Hamburguesas-Pizzas-Tortas</h3>
+            <ul>
+              <li class="menu-item"><a href="snacks.html">Snacks</a></li>
+              <li class="menu-item"><a href="pizza.html">Pizza</a></li>
+              <li class="menu-item"><a href="tortas.html">Tortas</a></li>
+              <li class="menu-item"><a href="hamburguesas.html">Hamburguesas</a></li>
+              <!--<li class="menu-item"><a href="crepas.html">Crepas</a></li>-->
+            </ul>
+          </li>
+          <li>
+            <h3><span class="icon-dashboard"></span>Pan-Postres</h3>
+            <ul>
+<!--<li class="menu-item"><a href="crepas.html">Crepas</a></li>-->
+              <li class="menu-item"><a href="postre.html">Postres</a></li>
+              <li class="menu-item"><a href="pan.html">Pan</a></li>
+            </ul>
+          </li>
+         <!--<li>
+            <h3><span class="icon-dashboard"></span>Promos la 10</h3>
+            <ul>
+            <li class="menu-item"><a href="crepas.html">Promociones</a></li>             
+            </ul>
+          </li>--> 
+          <li>
+            <h3><span class="icon-dashboard"></span>Bebidas</h3>
+            <ul>
+
+                          <li class="menu-item"><a href="cerveza.html">Cerveza</a></li>
+                          <li class="menu-item"><a href="coctel.html">Cocteles</a></li>
+                          <li class="menu-item"><a href="cremas.html">Cremas y Licores</a></li>
+                          <li class="menu-item"><a href="tequila.html">Tequilas</a></li>
+                          <li class="menu-item"><a href="ron.html">Rones</a></li>
+                          <li class="menu-item"><a href="brandi.html">Brandis y Cognac´s</a></li>
+                          <li class="menu-item"><a href="vodka.html">Vodk´s y Ginebras</a></li>
+                          <li class="menu-item"><a href="mezcal.html">Whishky´s y Mezcales</a></li>
+                          <li class="menu-item"><a href="martinis.html">Martinis</a></li>
+                          <li class="menu-item"><a href="frias.html">Bebidas Frias</a></li>
+                          <li class="menu-item"><a href="calientes.html">Bebidas Calientes</a></li>
+                          <li class="menu-item"><a href="jugoyfruta.html">Jugos</a></li>
+            </ul>
+          </li>
+          <li>
+            <!--<h3><span class="icon-dashboard"></span>Vinos</h3>
+            <ul>
+              <li class="menu-item"><a href="mexicano.html">Vinos Mexicanos</a></li>
+              <li class="menu-item"><a href="chileno.html">Vinos Chilenos</a></li>
+              <li class="menu-item"><a href="argentino.html">Vinos Argentinos</a></li>
+              <li class="menu-item"><a href="español.html">Vinos Españoles</a></li>
+              <li class="menu-item"><a href="blanco.html">Vinos Blancos y Espumosos</a></li>
+              <li class="menu-item"><a href="clericot.html">Vino por Copeo y Clericot</a></li>
+            </ul>
+          </li>
+        </ul>-->
+	 </main>
+    
+		<footer class="footer">
+			<div>
+                           
+                <a href="index.html" class="btnSlider"><i><b>Regresar al inicio</b></i></a>
+            
+            </div>
+        </footer>
+	</div>
+  <!-- prefix free to deal with vendor prefixes -->
+  <script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
+  
+  <!-- jQuery -->
+  <script src="http://thecodeplayer.com/uploads/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+    <div id="ultimo"></div>
+    <script>
+      // Función para cargar el widget de Google Translate
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+              { pageLanguage: 'es', includedLanguages: 'en,fr,de,it,pt,ja,zh-CN,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+              'google_translate_element'
+          );
+      }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Script para mostrar el selector de idiomas al hacer clic en el logo -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const googleLogo = document.querySelector('.goog-te-gadget img');
+          if (googleLogo) {
+              googleLogo.addEventListener('click', function () {
+                  const translateElement = document.querySelector('.goog-te-combo');
+                  if (translateElement) {
+                      translateElement.style.display = 'block';
+                  }
+              });
+          }
+      });
+  </script>
+
+  <!-- Slider automático -->
+  <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll("#slider li");
+      const totalSlides = slides.length;
+
+      function showSlide(index) {
+          slides.forEach((slide, i) => {
+              slide.style.opacity = i === index ? 1 : 0;
+              slide.style.zIndex = i === index ? 1 : 0;
+          });
+      }
+
+      function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          showSlide(currentSlide);
+      }
+
+      // Cambiar automáticamente cada 5 segundos
+      setInterval(nextSlide, 5000);
+
+      // Funciones para los botones de navegación
+      window.fntExecuteSlide = function (direction) {
+          if (direction === 'next') {
+              nextSlide();
+          } else if (direction === 'prev') {
+              prevSlide();
+          }
+      };
+
+      // Mostrar el primer slide al cargar la página
+      showSlide(currentSlide);
+  </script>
+</body>
+
+</html>

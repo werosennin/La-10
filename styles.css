@@ -1,0 +1,30 @@
+/* Estilos para la sección de entradas */
+h2 {
+    color: white; /* Color del texto del título */
+    background-color: #6d3b03; /* Fondo café */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    font-family: 'Roboto', sans-serif; /* Fuente */
+}
+
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+ul li {
+    color: white; /* Color del texto */
+    background-color: #3a2002; /* Fondo café más oscuro */
+    margin: 5px 0; /* Margen entre elementos */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-family: 'Roboto', sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+ul li:hover {
+    background-color: #6d3b03; /* Cambia el fondo al pasar el mouse */
+}

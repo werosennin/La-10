@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("imagenes/mesas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+#ultimo + div {
+  visibility: hidden;
+}
+/* Estilo para el contenedor del widget de Google Translate */
+#google_translate_element {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+/* Ocultar el selector de idiomas */
+.goog-te-combo {
+  display: none;
+}
+/* Mostrar solo el logo de Google */
+.goog-te-gadget {
+  font-size: 0 !important; /* Ocultar texto */
+}
+.goog-te-gadget img {
+  width: 24px; /* Tamaño del logo */
+  height: 24px;
+  cursor: pointer;
+}
+
+
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: 
+      "header header header"
+      "contenido contenido contenido"
+      "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+header {
+  color: white;
+  text-align: center;
+  
+}
+
+.contenedor .header {
+  background: #6d3b03;
+  color: #fff;
+  grid-area: header;
+}
+
+.contenedor .header nav ul {
+  background: #6d3b03;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+}
+
+.contenedor .header ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all ease-in-out 250ms;
+}
+
+.contenedor .header ul li:hover {
+  background: #3a2002;
+}
+
+.contenedor .header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.contenedor .header .hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #6d3b03;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.contenedor .contenido div {
+  width: 100%;
+  grid-area: contenido;
+}
+
+.contenedor .contenido div a img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor .footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  grid-area: footer;
+}
+
+.btnSlider {
+  color: #FFF;
+  font-size: 15pt;
+  font-family: 'arial';
+  letter-spacing: 1px;
+  padding: 10px 50px;
+  border: 1px solid #3a2002;
+  background: #6d3b03;
+  border-radius: 31px;
+  text-decoration: none;
+  transition: .5s all;
+}
+
+.btnSlider:hover {
+  background: #3a2002;
+  border: 1px solid #6d3b03;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+      grid-template-areas: 
+          "header header header"
+          "contenido contenido contenido"
+          "footer footer footer";
+  }
+
+  .contenedor .header ul li {
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+  }
+
+  .contenedor .header .hide {
+      display: block;
+  }
+
+  .contenedor .header nav ul {
+      display: none;
+  }
+
+  .btnSlider {
+      padding: 10px 30px;
+      font-size: 10pt;
+  }
+}

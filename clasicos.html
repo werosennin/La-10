@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script defer src="fuctions.js"></script>
+<script defer src="prueba.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilosp.css">
+    <link rel="shortcut icon" href="imagenes/restaurante.png">
+	<title>CafeLa10</title>
+     <style>
+     #ultimo + div{
+      visibility: hidden;
+    }
+   </style> 
+    <style>
+        /* Estilos para la sección de entradas */
+        h2 {
+            color: white;
+            background-color: #6d3b03;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            color: white;
+            background-color: #6d3b03;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: #6d3b03;
+        }
+    </style>
+</head>
+<body>
+
+	<div id="google_translate_element"></div>
+
+	<div class="contenedor">
+		<header class="header">
+			<header>
+				<h1><a>
+					<img  src="imagenes/restaurante1.png" alt="0" width="100" height="100" class="d-inline-block align-text-top">
+					<img  src="imagenes/cafe.png" alt="0" width="200" height="100" class="d-inline-block align-text-top">
+				</a></h1>
+			  </header>
+			<nav>
+				<ul>
+				  <li><a href="https://www.facebook.com/cafeLaDiez/"> <img src="imagenes/1384085.png" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp; &nbsp;<i><b>Facebook</b></i></a></li>
+				  <li><a href="https://www.facebook.com/cafeLaDiez/"> <img src="imagenes/instagram-logo-png-transparent-svg-vector-freebie-supply-in.png" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp; &nbsp;<i><b>Instagram</b></i></a></li>
+				  <li><a href="tel:+525555104123"><i><b>Telefono: (+52) 55 5510 4123</b></i></a></li>
+				  </ul>
+				  <center><div class="hide">
+				  <i class="fa fa-bars" aria-hidden="true"></i><i><b>Redes y Telefono</b></i>
+				</div></center>
+				
+			  </nav>
+			  
+				<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+				<script>
+				  $(".hide").on('click', function() {
+					$("nav ul").toggle('slow');
+				  })
+				</script>
+		</header>
+		<main class="contenido">
+
+			<h2>Tacos (por taco o por orden)</h2>
+            <ul>
+                <li>Orden de tacos (3pz) de bistec, pechuga de pollo, carne enchilada o chorizo a solo - $85</li>
+                <li>Orden de tacos (3pz) de cecina, chorizo argentino, arrachera o chistorra a solo - $100</li>
+                <li>Orden de tacos (3pz) de filete de pezcado, lengua o rib-eye - $130</li>
+                <li>Pechuga de pollo - $30</li>                                
+                <li>Bistec - $30</li>
+                <li>Chorizo - $30</li>
+                <li>Carne enchilada - $30</li>
+                <li>Chistorra - $35</li>
+                <li>Cecina natural - $35</li>
+                <li>Chorizo argentino - $35</li>
+                <li>Arrachera - $35</li>
+                <li>Lengua - $45</li>
+                <li>Filete de pescado - $45</li>
+                <li>Rib-eye - $45</li>
+                <li>NOTA : todo extra tiene un costo y depende de la eleccion del comensal puede ser de $5 hasta $50.</li>
+            </ul>
+	
+		</main>
+    <footer class="footer">
+			<div>
+                           
+                <a href="carta.html" class="btnSlider"><i><b>Regresar a la carta</b></i></a>
+            
+            </div>
+        </footer>
+	</div>
+  
+	</div>
+	<div id="ultimo"></div>
+	 <!-- Scripts -->
+	 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	 <script src="script.js"></script>
+	 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
